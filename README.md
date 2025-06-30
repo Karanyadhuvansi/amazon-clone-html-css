@@ -43,4 +43,4 @@ I love creating clones, improving UI, and learning by building. 🚀
 ## 📞 Connect With Me
 
 - GitHub: [@Karanyadhuvansi](https://github.com/Karanyadhuvansi)
-- Email: karanyadhuvansi@example.com (replace with your real one)
+- Email: karanyadhuvansi005@gmail.com
