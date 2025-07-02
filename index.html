@@ -2,62 +2,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon project </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Project</title>
+
+    <!-- Font-Awesome icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-rhEhyVsGh0n1zXTIvJu+0L7J9xXUTg5w6LzWMoPs5n7+emOwzX+g+wiyXDq0zH6ln5ejvOKs7k9bM3Y79P1J+Q=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <!-- ───────────── HEADER ───────────── -->
     <header>
+        <!-- Top Navbar -->
         <div class="navbar">
+            <!-- Logo -->
             <div class="nav_logo border">
                 <div class="logo"></div>
             </div>
+
+            <!-- Deliver-to -->
             <div class="nav_address border">
-                <p class="line1">
-                    Deliver to
-                </p>
+                <p class="line1">Deliver to</p>
                 <div class="add_icon">
                     <i class="fa-solid fa-location-dot"></i>
-                    <p class="line2">
-                        India
-                    </p>
-
+                    <p class="line2">India</p>
                 </div>
             </div>
-            <div class="nav_search ">
+
+            <!-- Search bar -->
+            <div class="nav_search">
                 <select class="search_select">
                     <option>All</option>
                 </select>
-                <input placeholder="Search Amazon" class="search_input">
-                <div class="search_icon"><i class="fa-brands fa-searchengin"></i></div>
-
+                <input class="search_input" placeholder="Search Amazon" />
+                <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
             </div>
-            <div class="lang_box"><img src="https://flagcdn.com/us.svg" alt="usflag" class="flag">
+
+            <!-- Language -->
+            <div class="lang_box border">
+                <img src="https://flagcdn.com/us.svg" alt="US flag" class="flag" />
                 <span class="lang_text">EN</span>
                 <span class="arrow">▽</span>
             </div>
 
-
+            <!-- Sign-in -->
             <div class="nav_signin border">
                 <p><span>Hello, sign in</span></p>
-                <p class="nav_second">Account & Lists</p>
-
+                <p class="nav_second">Account &amp; Lists</p>
             </div>
+
+            <!-- Returns -->
             <div class="nav_signin border">
                 <p><span>Returns</span></p>
-                <p class="nav_second">& Orders</p>
-
+                <p class="nav_second">&amp; Orders</p>
             </div>
+
+            <!-- Cart -->
             <div class="nav_cart border">
                 <i class="fa-solid fa-cart-shopping"></i>
-                Cart
+                <span>Cart</span>
             </div>
         </div>
+
+        <!-- Secondary panel (links) -->
         <div class="panel">
             <div class="All_panel">
                 <i class="fa-solid fa-bars"></i>
@@ -65,7 +78,7 @@
             </div>
             <div class="panel_option">
                 <p>Today's Deals</p>
-                <p> Registry</p>
+                <p>Registry</p>
                 <p>Prime Video</p>
                 <p>Gift Cards</p>
                 <p>Customer Service</p>
@@ -77,152 +90,157 @@
         </div>
     </header>
 
-
-    <div class="hero_section">
+    <!-- ───────────── HERO ───────────── -->
+    <section class="hero_section">
         <div class="hero_msg">
             You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
-            <a>Click here to go to amazon.in</a>
+            <a href="#">Click here to go to amazon.in</a>
         </div>
-    </div>
-    <!-- shop section -->
-    <div class="shop_section">
-        <div class="box1 box">
+    </section>
+
+    <!-- ───────────── SHOP SECTION ───────────── -->
+    <section class="shop_section">
+        <!-- Box 1 -->
+        <div class="box">
             <div class="box_content">
                 <h2>Get your game on</h2>
-                <div class="box_img" style="background-image: url('box.jpg');"></div>
+                <div class="box_img" style="background-image:url('box.jpg');"></div>
                 <p>Shop gaming</p>
             </div>
         </div>
-        <div class="box2 box">
+
+        <!-- Box 2 -->
+        <div class="box">
             <div class="box_content">
                 <h2>The best sunscreen ever</h2>
-                <div class="box_img" style="background-image: url('product_1.jpg');"></div>
+                <div class="box_img" style="background-image:url('product_1.jpg');"></div>
                 <p>Shop Sunscreen</p>
             </div>
         </div>
-        <div class="box3 box">
+
+        <!-- Box 3 -->
+        <div class="box">
             <div class="box_content">
                 <h2>Time to drink CoCO</h2>
-                <div class="box_img" style="background-image: url('product_2.jpg');"></div>
-                <p>Shop Coco-Cola</p>
+                <div class="box_img" style="background-image:url('product_2.jpg');"></div>
+                <p>Shop Coca-Cola</p>
             </div>
         </div>
-        <div class="box4 box">
+
+        <!-- Box 4 -->
+        <div class="box">
             <div class="box_content">
                 <h2>Get Waterproof eyeliner</h2>
-                <div class="box_img" style="background-image: url('product_3.jpg');"></div>
+                <div class="box_img" style="background-image:url('product_3.jpg');"></div>
                 <p>Shop eyeliner</p>
             </div>
         </div>
-        <div class="box1 box">
+
+        <!-- Box 5 -->
+        <div class="box">
             <div class="box_content">
-                <h2>Use this awesome perfume </h2>
-                <div class="box_img" style="background-image: url('product_4.jpg');"></div>
-                <p>Shop perfume </p>
-            </div>
-        </div>
-        <div class="box2 box">
-            <div class="box_content">
-                <h2>An amazing fragnance</h2>
-                <div class="box_img" style="background-image: url('product_5.jpg');"></div>
+                <h2>Use this awesome perfume</h2>
+                <div class="box_img" style="background-image:url('product_4.jpg');"></div>
                 <p>Shop perfume</p>
             </div>
         </div>
-        <div class="box3 box">
+
+        <!-- Box 6 -->
+        <div class="box">
+            <div class="box_content">
+                <h2>An amazing fragrance</h2>
+                <div class="box_img" style="background-image:url('product_5.jpg');"></div>
+                <p>Shop perfume</p>
+            </div>
+        </div>
+
+        <!-- Box 7 -->
+        <div class="box">
             <div class="box_content">
                 <h2>The Queen of seduction</h2>
-                <div class="box_img" style="background-image: url('product_6.jpg');"></div>
+                <div class="box_img" style="background-image:url('product_6.jpg');"></div>
                 <p>Shop now</p>
             </div>
         </div>
-        <div class="box4 box">
+
+        <!-- Box 8 -->
+        <div class="box">
             <div class="box_content">
-                <h2>Get tech product h2>
-                    <div class="box_img" style="background-image: url('product_7.jpg');"></div>
-                    <p>Shop tech</p>
+                <h2>Get tech product</h2>
+                <div class="box_img" style="background-image:url('product_7.jpg');"></div>
+                <p>Shop tech</p>
             </div>
         </div>
+    </section>
 
-    </div>
-
-    <!-- Footer  -->
-
+    <!-- ───────────── FOOTER ───────────── -->
     <footer>
+        <!-- Back-to-top -->
+        <div class="footer_panel1">Back to top</div>
 
-        <div class="footer_panel1">
-            Back to top
-        </div>
+        <!-- Link columns -->
         <div class="footer_panel2">
             <ul>
-                <p><b>Get to know us</b> </p>
-                <a >Careers</a>
-                <a >Blog</a>
-                <a >About Amazon</a>
-                <a >Amazon Devices</a>
-                <a >Amazon Science</a>
-           </ul>
+                <p><b>Get to know us</b></p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+
             <ul>
-                <p><b>Make Money with us</b>  </p>
-                <a >Sell on Amazon Business</a>
-                <a >Sell apps on Amazon</a>
-                <a >Become an Affiliate</a>
-                <a >Advertise Your Products</a>
-                <a >Self-Publish with Us</a>
-                <a >Host an Amazon Hub</a>
-                <a >›See More Make Money with Us</a>
-           </ul>
+                <p><b>Make Money with us</b></p>
+                <a>Sell on Amazon Business</a>
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an Amazon Hub</a>
+                <a>› See More Make Money with Us</a>
+            </ul>
+
             <ul>
-               
-             	
                 <p><b>Amazon Payment Products</b></p>
-                <a >Amazon Business Card</a>
-                <a >Shop with Points</a>
-                <a >Reload Your Balancen</a>
-                <a >Amazon Currency Converter</a>
-                
-           </ul>
+                <a>Amazon Business Card</a>
+                <a>Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+            </ul>
+
             <ul>
-                <p><b>Let Us Help You </b></p>
-                <a >Amazon and COVID-19</a>
-                <a >Your Account</a>
-                <a >Your Orders</a>
-                <a >Shipping Rates & Policies</a>
-                <a >Returns & Replacements</a>
-                <a >Manage Your Content and Devices</a>
-                <a >Help</a>
-           </ul>
-           
+                <p><b>Let Us Help You</b></p>
+                <a>Amazon &amp; COVID-19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates &amp; Policies</a>
+                <a>Returns &amp; Replacements</a>
+                <a>Manage Your Content &amp; Devices</a>
+                <a>Help</a>
+            </ul>
         </div>
 
+        <!-- Logo strip -->
         <div class="footer_panel3">
-
-        <div class="logo">
-             
-        </div>
+            <div class="logo"></div>
         </div>
 
+        <!-- Final legal -->
         <div class="footer_panel4">
-            
-            
-             <div class="pages">
-               <a > Conditions of Use</a>
-                <a> Privacy Notice</a>
-                 <a> Consumer Health Data Privacy Disclosure</a>
-                 <a> Your Ads Privacy Choices</a>
-
-
+            <div class="pages">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>Consumer Health Data Privacy Disclosure</a>
+                <a>Your Ads Privacy Choices</a>
             </div>
-             <div class="copyrightt">
-                 © 1996-2025, Amazon.com, Inc. or its affiliate</div>
-           
-           </div>
-    
-
+            <div class="copyrightt">
+                © 1996-2025, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
     </footer>
-
-
-
-
 </body>
 
 </html>
+
+
+---
